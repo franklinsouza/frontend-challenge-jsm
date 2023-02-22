@@ -7,6 +7,16 @@
     margin-bottom: 14px;  
   }
 
+  &__form {
+    transition: max-height 1s ease;
+    max-height: 175px;
+    overflow: hidden;
+  }
+  
+  &__form--open {
+    max-height: 972px;
+  }
+
   &__line-form {
     margin-bottom: 12px;
   }
