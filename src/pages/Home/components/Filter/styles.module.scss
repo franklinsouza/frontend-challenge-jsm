@@ -1,0 +1,17 @@
+.filter {
+  border: 1px solid #E5E5E5;
+  padding: 24px 27px;
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 14px;  
+  }
+
+  &__line-form {
+    margin-bottom: 12px;
+  }
+
+  &__checkbox {
+    margin-right: 8px;
+  }
+}

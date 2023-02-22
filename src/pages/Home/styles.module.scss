@@ -1,0 +1,30 @@
+@use '../../styles/mixin.scss' as mixin;
+
+.home {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-bottom: 80px;
+    align-items: flex-start;
+
+    @include mixin.tablet {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+
+  &__content-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    @include mixin.phone {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mixin.desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+  

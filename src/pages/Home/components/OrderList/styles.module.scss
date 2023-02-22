@@ -1,0 +1,19 @@
+.order-list {
+  border: 1px solid #E5E5E5;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &__filter-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__orderby {
+    font-size: .875rem;
+    font-weight: 500;
+    margin-right: 8px;
+  } 
+}

@@ -1,0 +1,35 @@
+.card {
+  padding: 35px 7px;
+  text-align: center;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__img { 
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+
+  &__name::first-letter {
+    text-transform: uppercase;
+  }
+
+  &__street {
+    font-size: .875rem;
+    margin-bottom: 12px;
+  }
+
+  &__address {
+    font-size: .75rem;
+  }
+}
