@@ -11,8 +11,6 @@ const Filter = ({states, checkState}) => {
   const handleFormStatus = () => {
     setFormStatus(!formStatus);
   }
-  
-  console.log(formStatus);
 
   return (
     <aside className={styles.filter}>

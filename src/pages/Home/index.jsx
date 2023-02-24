@@ -91,12 +91,14 @@ const Home = () => {
         <div className={styles.home__content}>
           <Filter states={states} checkState={handleCheckState}/>
           <div>
-            {currentUsers &&
+            
+            {
+              currentUsers &&
               <>  
                 <OrderList currentPosts={currentUsers.length} totalPosts={list.length}/>  
                 <div className={styles['home__content-cards']}>
-                  {
-                    currentUsers.map(item => 
+                  {currentUsers.map((item) => 
+                    <>
                       <Card 
                         key={item.email} 
                         fname={item.name.first}
@@ -106,9 +108,10 @@ const Home = () => {
                         city={item.location.city}
                         state={item.location.state}
                         postcode={item.location.postcode}
+                        index={data.findIndex(index => index.email === item.email)}
                       />
-                    )
-                  }
+                    </>
+                  )}
                 </div>
 
                 <Pagination 

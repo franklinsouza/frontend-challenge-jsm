@@ -1,4 +1,7 @@
 import styles from './styles.module.scss';
+import fb from '../../assets/fb.png';
+import ld from '../../assets/ld.png';
+import ig from '../../assets/ig.png';
 
 const Footer = () => {
   return(
@@ -9,13 +12,19 @@ const Footer = () => {
 
         <ul className={styles['footer__social-list']}>
           <li>
-            <a href="#" className={styles['footer__social-link']}>F</a>
+            <a href="#" className={styles['footer__social-link']}>
+              <img src={fb} />
+            </a>
           </li>
           <li>
-            <a href="#" className={styles['footer__social-link']}>IN</a>
+            <a href="#" className={styles['footer__social-link']}>
+              <img src={ld} />
+            </a>
           </li>
           <li>
-            <a href="#" className={styles['footer__social-link']}>INS</a>
+            <a href="#" className={styles['footer__social-link']}>
+              <img src={ig} />
+            </a>
           </li>
         </ul>
       </div>

@@ -7,15 +7,11 @@ const apllyFilters = (data, states, search) => {
     updatedList = updatedList.filter(item => statesChecked.includes(item.location.state));
   }
 
-  //console.log(search);
-
   if(search) {
     updatedList = updatedList.filter(
       (item) => 
         item.name.first.toLowerCase().search(search.toLowerCase().trim()) !== -1
     );
-
-    console.log(updatedList);
   }
 
   return updatedList;

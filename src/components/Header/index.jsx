@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import logo from '../../assets/juntossomosmais_logo.png'
+import { Link } from "react-router-dom";
 
 const Header = ({search}) => {
   
@@ -11,9 +12,9 @@ const Header = ({search}) => {
     <header className={styles.header}>
       <div className='container'>
         <div className={styles.header__wrap}>
-          <a href="#" className={styles.header__logo}>
+          <Link to={'/'} className={styles.header__logo}>
             <img src={logo} />
-          </a>
+          </Link>
 
           <form className={styles.header__form}>
             <input 

@@ -18,6 +18,10 @@
   &__name {
     font-size: 1.25rem;
     margin-bottom: 16px;
+
+    a {
+      color: #222D39;
+    }
   }
 
   &__name::first-letter {
