@@ -21,7 +21,6 @@ const Details = () => {
         </h1>
 
         {data &&
-
         <>
           <img src={data[id].picture.large} />
           <h1>{data[id].name.first} {data[id].name.last}</h1>
